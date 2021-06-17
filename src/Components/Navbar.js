@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Button from './Button';
+import './Navbar.css';
 
 export default function Navbar() {
     const [click, setclick] = useState(false);
@@ -25,8 +26,7 @@ export default function Navbar() {
 
 
     return (
-        <>
-            
+        <>  
             <nav className="nav">
             <div className='nav-container'>
                 <Link to='/' className="nav-logo">
