@@ -1,18 +1,34 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Button from './Button';
 
 export default function Navbar() {
     const [click, setclick] = useState(false);
+    const [button, setbutton] = useState(true);
     
     const menuHandler=()=>{setclick(!click);}
 
     const closeMobileMenu=()=>{setclick(false);}
 
+    const showButton=()=>{
+        if(window.innerWidth<=960){
+            setbutton(false);
+        }
+        else setbutton(true);
+    }
+
+    useEffect(()=>{
+        showButton();
+    },[]);
+
+    document.addEventListener("resize",showButton);
+
 
     return (
-        <div>
+        <>
             
             <nav className="nav">
+            <div className='nav-container'>
                 <Link to='/' className="nav-logo">
                     Website<i class="ri-remixicon-line" />
                 </Link>
@@ -41,7 +57,9 @@ export default function Navbar() {
                         </Link>
                     </li>
                 </ul>
+                {button && <Button btnStyle='btn-secondary'>Sign up</Button>}
+            </div>
             </nav>
-        </div>
+        </>
     )
 }
