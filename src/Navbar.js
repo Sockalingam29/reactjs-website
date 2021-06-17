@@ -10,12 +10,14 @@ export default function Navbar() {
 
     return (
         <div>
+            
             <nav className="navbar">
                 <Link to='/' className="navbar-logo">
                     Website<i className="icon" />
                 </Link>
                 <div className="menu-icon" onClick={menuHandler}>
-                <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
+                <i className={click ? "ri-close-line" : "ri-menu-line"}/>
+             
                 </div>
             </nav>
         </div>
