@@ -14,7 +14,7 @@ export default function Button({child,btnStyle,btnSize,onClick,type})
     return (
         <div>
             <Link to='/signup' className="btn-mobile">
-                <button type={type} className={`btn ${setStyle} ${setSize}`} onClick={onClick} type={type}>
+                <button id="signup" type={type} className={`btn ${setStyle} ${setSize}`} onClick={onClick} type={type}>
                     {child}
                 </button>
             </Link>

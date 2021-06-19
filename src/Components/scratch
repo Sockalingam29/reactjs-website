@@ -1,0 +1,35 @@
+.nav-container{
+        position: relative;
+    }
+    .nav-menu {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        transition: all 0.5s ease;
+    }
+    .nav-menu-icon {
+        color: white;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 80%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    .nav-links-signup{
+        display: none;
+    }
+    .nav-menu.active {
+        position: absolute;
+        background-color: #242222;
+        left: 0;
+        transition: all 0.5s ease;
+        width: 100%;
+        text-align: center;
+      }
+  

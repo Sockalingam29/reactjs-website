@@ -12,7 +12,7 @@ export default function Navbar() {
     const closeMobileMenu=()=>{setclick(false);}
 
     const showButton=()=>{
-        if(window.innerWidth<=960){
+        if(window.innerWidth<=600){
             setbutton(false);
         }
         else setbutton(true);
@@ -20,9 +20,9 @@ export default function Navbar() {
 
     useEffect(()=>{
         showButton();
-    },[]);
+    },[button]);
 
-    document.addEventListener("resize",showButton);
+    {document.addEventListener("resize",showButton);}
 
 
     return (
@@ -32,9 +32,11 @@ export default function Navbar() {
                 <Link to='/' className="nav-logo">
                     Website<i class="ri-remixicon-line" />
                 </Link>
+               
                 <div className="nav-menu-icon" onClick={menuHandler}>
                     <i className={click ? "ri-close-line" : "ri-menu-line"}/>
                 </div>
+               
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className="nav-items">
                         <Link to='/' className="nav-links" onClick={closeMobileMenu}>
@@ -56,10 +58,13 @@ export default function Navbar() {
                             Sign Up
                         </Link>
                     </li>
-                </ul>
-                {button && <Button btnStyle='btn-secondary'>Sign up</Button>}
+                </ul>                
+                <div id="signup">
+                    {<Button child="Sign-up" btnStyle="btn-secondary"/>}
+                </div>
             </div>
             </nav>
         </>
     )
+
 }
