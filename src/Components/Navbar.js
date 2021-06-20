@@ -30,7 +30,7 @@ export default function Navbar() {
             <nav className="nav">
             <div className='nav-container'>
                 <Link to='/' className="nav-logo">
-                    Website<i class="ri-remixicon-line" />
+                    e-domize<i class="ri-remixicon-line" />
                 </Link>
                
                 <div className="nav-menu-icon" onClick={menuHandler}>
@@ -53,15 +53,15 @@ export default function Navbar() {
                             Products
                         </Link>
                     </li>
-                    <li className="nav-items">
+                    <li id="list-signup"className="nav-items">
                         <Link to='/' className="nav-links-signup" onClick={closeMobileMenu}>
                             Sign Up
                         </Link>
                     </li>
+                    <li id="btn-signup" className="nav-items" onClick={closeMobileMenu}>
+                        {<Button child="Sign-up" btnStyle="btn-secondary"/>}      
+                    </li>
                 </ul>                
-                <div id="signup">
-                    {<Button child="Sign-up" btnStyle="btn-secondary"/>}
-                </div>
             </div>
             </nav>
         </>
