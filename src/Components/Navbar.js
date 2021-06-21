@@ -59,7 +59,7 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li id="btn-signup" className="nav-items" onClick={closeMobileMenu}>
-                        {<Button child="Sign-up" btnStyle="btn-secondary"/>}      
+                        <Button child="Sign-up" btnStyle="btn-secondary"/>
                     </li>
                 </ul>                
             </div>
