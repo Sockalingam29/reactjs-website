@@ -1,0 +1,49 @@
+.cards{
+    background: #fff;
+    max-width: 100%;
+    overflow: hidden;
+}
+.cards > h1{
+    text-align: center;
+}
+.card-item-link{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+    overflow:hidden;
+}
+.cards-container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+}
+.card-item{
+    display: flex;
+    margin:0 1 rem;
+    border-radius: 10px;
+}
+.card-item-fig{
+    position:relative;
+    width: 100%;
+    overflow:hidden;
+    padding-top: 67%;
+}
+.card-item-fig-img{position: absolute;
+    width: 100%;
+    
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display: block;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+
+}
