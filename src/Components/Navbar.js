@@ -1,7 +1,6 @@
 /*
 KNOWN ISSUES:
-On mobile menu, page changes only when clicked on the text
-Mobile menu width > 100%
+Logo expands more than the text space
 */
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
