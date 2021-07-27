@@ -110,7 +110,7 @@
         align-items: center;
         justify-content: center;
         position: relative;
-        width: 90%;
+       
     }
     .nav-links:hover{
         border:none;
@@ -125,6 +125,9 @@
         color: white;
         cursor: pointer;
         font-size: 2rem;
+        position: absolute;
+        top: 30px;
+        right:0;
     }
     .nav-links{
         display: block;

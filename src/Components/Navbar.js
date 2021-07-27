@@ -1,6 +1,6 @@
 /*
 KNOWN ISSUES:
-Logo expands more than the text space
+None
 */
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
