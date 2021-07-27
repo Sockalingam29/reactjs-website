@@ -14,7 +14,7 @@ export default function Carditems(props) {
             className="card-item-fig-img" />
         </figure>
         <div className="card-item-txt">
-            <h5>{props.text}</h5>
+            <div>{props.text}</div>
         </div>
         </Link>
         </li>   

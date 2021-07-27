@@ -13,15 +13,16 @@ export default function Cards() {
         <div className="cards">
         <h1>Explore our products</h1>
         <div className="cards-container">
-            <ul className="card-list-items card-list-">
+        <div className='cards__wrapper'>
+            <ul className="card-list-items">
                 <Carditems
                 src={img1}
                 text='Lorem ipsum dolor sit amet'
                 path='/services'/>
                 <Carditems 
-                text={img2}
+                text='Lorem ipsum dolor sit amet'
                 path='/services'
-                src='src\Components\Himalayas-1.jpg'/>
+                src={img2}/>
             </ul>
             <ul className="card-list-items">
                 <Carditems 
@@ -37,6 +38,7 @@ export default function Cards() {
                     path='/services'
                     src={img5}/>
             </ul>
+        </div>
         </div>
         </div>
     )
