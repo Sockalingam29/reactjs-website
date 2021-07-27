@@ -95,10 +95,9 @@
         left: 0;
     }
     .nav-items{
-        padding: 20px;
+        padding: 20px 0px;
         cursor: pointer;
-        width: 100%;
-        
+        width:100%;
     }
     .nav-items:hover{
         background-color: rgb(83, 82, 80);
@@ -126,6 +125,10 @@
         color: white;
         cursor: pointer;
         font-size: 2rem;
+    }
+    .nav-links{
+        display: block;
+        width: 100%;
     }
     
 }
