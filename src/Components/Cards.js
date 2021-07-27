@@ -18,24 +18,24 @@ export default function Cards() {
                 <Carditems
                 src={img1}
                 text='Lorem ipsum dolor sit amet'
-                path='/services'/>
+                path='/about'/>
                 <Carditems 
                 text='Lorem ipsum dolor sit amet'
-                path='/services'
+                path='/products'
                 src={img2}/>
             </ul>
             <ul className="card-list-items">
                 <Carditems 
                     text='Lorem ipsum dolor sit amet'
-                    path='/services'
+                    path='/products'
                     src={img3}/>
                 <Carditems 
                     text='Lorem ipsum dolor sit amet'
-                    path='/services'
+                    path='/signup'
                     src={img4}/>
                 <Carditems 
                     text='Lorem ipsum dolor sit amet'
-                    path='/services'
+                    path='/products'
                     src={img5}/>
             </ul>
         </div>

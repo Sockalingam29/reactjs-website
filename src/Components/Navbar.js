@@ -1,3 +1,8 @@
+/*
+KNOWN ISSUES:
+On mobile menu, page changes only when clicked on the text
+Mobile menu width > 100%
+*/
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Button from './Button';
@@ -24,7 +29,6 @@ export default function Navbar() {
 
     {document.addEventListener("resize",showButton);}
 
-
     return (
         <>  
             <nav className="nav">
@@ -44,17 +48,17 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li className="nav-items">
-                        <Link to='/' className="nav-links" onClick={closeMobileMenu}>
+                        <Link to='/about' className="nav-links" onClick={closeMobileMenu}>
                             About
                         </Link>
                     </li>
                     <li className="nav-items">
-                        <Link to='/' className="nav-links" onClick={closeMobileMenu}>
+                        <Link to='/products' className="nav-links" onClick={closeMobileMenu}>
                             Products
                         </Link>
                     </li>
                     <li id="list-signup"className="nav-items">
-                        <Link to='/' className="nav-links-signup" onClick={closeMobileMenu}>
+                        <Link to='/signup' className="nav-links-signup" onClick={closeMobileMenu}>
                             Sign Up
                         </Link>
                     </li>
