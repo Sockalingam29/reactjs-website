@@ -1,11 +1,11 @@
 import React from 'react'
 import Carditems from './Carditems'
 import "./Cards.css"
-import img1 from './Himalayas-1.jpg'
-import img2 from './himalayas-2.JPG'
-import img3 from './Himalayas-3.jpg'
-import img4 from './Himalayas-4.jpg'
-import img5 from './Himalayas_Map.png'
+import img1 from '../images/Himalayas-1.jpg'
+import img2 from '../images/himalayas-2.JPG'
+import img3 from '../images/Himalayas-3.jpg'
+import img4 from '../images/Himalayas-4.jpg'
+import img5 from '../images/Himalayas_Map.png'
 
 
 export default function Cards() {
